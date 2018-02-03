@@ -104,6 +104,10 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.6.2)
   jekyll-feed (~> 0.6)
+  jekyll-gist
+  jekyll-paginate
+  jekyll-sitemap
+  jemoji
   minima (~> 2.0)
   minimal-mistakes-jekyll
   tzinfo-data
