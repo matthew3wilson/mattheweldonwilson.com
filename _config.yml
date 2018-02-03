@@ -1,0 +1,87 @@
+# ------------------------------------------------------------------------
+# Site settings
+title: Matthew Wilson
+name: Matthew Wilson
+email: mattheweldonwilson@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  leverage the digital and welcome real life
+author: matthew_wilson
+# copyright: Copyright © Joe Buhlig 2017 • All Rights Reserved
+baseurl: ""
+url: "https://mattheweldonwilson.com"
+# cdn_url: https://cdn.joebuhlig.com
+# enforce_ssl: joebuhlig.com
+# version: 15
+twitter_username: matthew3wilson
+github_username:  matthew3wilson
+instagram_username: matthew3wilson
+# subreddit:  joebuhlig
+
+# ------------------------------------------------------------------------
+# Build settings
+markdown: kramdown
+timezone: America/Chicago
+destination: _site
+gems:
+  - jekyll
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-gist
+  - kramdown
+  - jekyll-watch
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed/index.xml"
+        - "/feed/podcast/index.xml"
+        - "/400.html"
+        - "/401.html"
+        - "/403.html"
+        - "/404.html"
+        - "/500.html"
+    include_posts:
+        - "/index.html"
+        - "/whaddyaknowjoe/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
+# ------------------------------------------------------------------------
+# Post settings
+excerpt_separator: <!--more-->
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: joe_buhlig
+
+# ------------------------------------------------------------------------
+# RSS Settings
+
+rss_path: /feed
+rss_name: index.xml
+rss_post_limit: 10
+
+# Podcast General Settings
+# ------------------------------------------------------------------------
+
+# The homepage of your podcast
+podcast_url: http://www.joebuhlig.com/whaddyaknowjoe
+podcast_album_art: /assets/base/Whaddya-Know-Joe-Album-Art.png
+podcast_title: Whaddya Know Joe?
+podcast_owner: Joe Buhlig
+podcast_email: joe@joebuhlig.com
+podcast_category: Technology
+podcast_subcategory_one: Software How-To
+podcast_subcategory_two: Gadgets
+podcast_explicit: "no"
+podcast_author: Joe Buhlig
+podcast_description: Productivity stories from the trenches. What works and what I'll never do again. Hosted by Joe Buhlig.
+podcast_summary: Joe Buhlig walks you through real life story and then breaks down the productivity tools and techniques used. It's a great way to learn how to implement the tips and tricks that you see across the web. Productivity stories from the trenches. What works and what to never try.
+podcast_subtitle: Productivity stories from the trenches. What works and what I'll never do again. Hosted by Joe Buhlig.
